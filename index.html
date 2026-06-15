@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Asadullah | Portfolio</title>
+
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+<style>
+
+/* RESET */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#0f172a;
+color:white;
+padding-top:70px; /* navbar fix */
+}
+
+/* NAVBAR TEXT FIX */
+.navbar-nav .nav-link{
+color:white !important;
+}
+
+.navbar-nav .nav-link:hover{
+color:#38bdf8 !important;
+}
+
+/* HERO */
+.hero{
+min-height:100vh;
+display:flex;
+align-items: center;
+justify-content:space-between;
+gap:50px;
+padding:60px 10%;
+}
+
+.hero-text{
+flex:1;
+}
+
+.hero-text h3{
+font-size:22px;
+}
+
+.hero-text h1{
+font-size:60px;
+margin:10px 0;
+}
+
+.hero-text span{
+color:#38bdf8;
+}
+
+.hero-text p{
+color:#cbd5e1;
+max-width:600px;
+margin-bottom:20px;
+}
+
+.btn-custom{
+display:inline-block;
+padding:12px 25px;
+background:#38bdf8;
+color:white;
+border-radius:8px;
+text-decoration:none;
+margin-right:10px;
+transition:.3s;
+}
+
+.btn-custom:hover{
+opacity:.85;
+transform:translateY(-2px);
+}
+
+/* IMAGE */
+.hero-img{
+flex:1;
+display:flex;
+justify-content:center;
+}
+
+.hero-img img{
+width:100%;
+max-width:350px;
+border-radius:15px;
+}
+
+/* ABOUT */
+.about{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:30px;
+}
+
+/* SKILLS */
+.skills-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+gap:15px;
+}
+
+.skill{
+background:#1e293b;
+padding:20px;
+border-radius:10px;
+text-align:center;
+}
+
+/* PROJECTS */
+.projects-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.project{
+background:#1e293b;
+padding:20px;
+border-radius:10px;
+}
+
+/* CONTACT */
+.contact-box{
+background:#1e293b;
+padding:20px;
+border-radius:10px;
+}
+
+/* SOCIALS */
+.socials a{
+color:#38bdf8;
+font-size:22px;
+margin-right:10px;
+}
+
+/* FOOTER */
+footer{
+text-align:center;
+padding:20px;
+background:#020617;
+margin-top:40px;
+}
+
+/* ======================
+   RESPONSIVE DESIGN
+====================== */
+
+/* TABLET */
+@media(max-width:992px){
+
+.hero{
+flex-direction:column-reverse;
+text-align:center;
+gap:30px;
+}
+
+.hero-text h1{
+font-size:42px;
+}
+
+.about{
+grid-template-columns:1fr;
+}
+
+.hero-img img{
+max-width:260px;
+}
+}
+
+/* MOBILE */
+@media(max-width:576px){
+
+.hero{
+padding:30px 5%;
+}
+
+.hero-text h1{
+font-size:32px;
+}
+
+.hero-text h3{
+font-size:18px;
+}
+
+.btn-custom{
+display:block;
+margin:10px 0;
+text-align:center;
+}
+
+.skills-grid,
+.projects-grid{
+grid-template-columns:1fr;
+}
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+
+    <a class="navbar-brand text-info fw-bold" href="#">ASADULLAH</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navMenu">
+
+      <ul class="navbar-nav ms-auto gap-2">
+
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+
+      </ul>
+
+    </div>
+
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+<div class="hero-text">
+<h3>Hello, I'm Asadullah</h3>
+<h3><span>Software Engineering Student</span></h3>
+  <p>Front-End Developer & Designer</p>
+
+<p>Web Developer | HTML | CSS | JavaScript | PHP | MySQL</p>
+
+<a href="cv.pdf" download class="btn-custom">Download CV</a>
+<a href="#contact" class="btn-custom">Hire Me</a>
+</div>
+
+<div class="hero-img">
+<img src="./content/172f80aa-16e1-4c78-afda-1ea0a45c6861.jpg">
+</div>
+
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="p-5">
+<h2 class="text-info">About Me</h2>
+
+<div class="about">
+
+<p>
+I am Asadullah, a Software Engineering student with a strong passion for web development and software design. I specialize in building responsive and user-friendly web applications using HTML, CSS, Bootstrap, JavaScript, PHP, and MySQL.
+</p>
+
+<p>
+I have hands-on experience in developing projects like inventory management systems, admin dashboards, and browser-based games. I enjoy turning ideas into real-world functional applications with clean UI and efficient code.
+</p>
+
+<p>
+My goal is to become a professional Full Stack Web Developer. I am continuously improving my skills in modern technologies such as React.js, Laravel, and API integration, and I am actively seeking internship or entry-level opportunities to grow in a professional environment.
+</p>
+
+<p>
+I am a quick learner, problem solver, and committed to writing clean, maintainable code. I am ready to contribute to real-world projects and work in a team-oriented environment.
+</p>
+
+</div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="p-5">
+<h2 class="text-info">Skills</h2>
+
+<div class="skills-grid">
+<div class="skill">HTML</div>
+<div class="skill">CSS</div>
+<div class="skill">Bootstrap</div>
+<div class="skill">JavaScript</div>
+<div class="skill">PHP</div>
+<div class="skill">MySQL</div>
+</div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="p-5">
+<h2 class="text-info">Projects</h2>
+
+<div class="projects-grid">
+<div class="project">Inventory System</div>
+<div class="project">Space Game</div>
+<div class="project">Radar Game</div>
+<div class="project">Dashboard</div>
+</div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education" class="p-5">
+  <h2 class="text-info">Education</h2>
+
+  <div class="education-grid">
+
+    <div class="education">
+      <h3>Matric (Science)</h3>
+      <p>Crescent School</p>
+      <p>Completed: 2024</p>
+    </div>
+
+    <div class="education">
+      <h3>Intermediate (ICS / Pre-Engineering)</h3>
+      <p>CMS Boys College</p>
+      <p>Currently Studying (2025 - Present)</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="p-5">
+<h2 class="text-info">Contact</h2>
+
+<div class="contact-box">
+<p>Email: asadullahbasit2008@gmail.com</p>
+<p>Phone: +92 3243131940</p>
+
+<div class="socials">
+<a href="#"><i class="fab fa-github"></i></a>
+<a href="#"><i class="fab fa-linkedin"></i></a>
+<a href="#"><i class="fab fa-facebook"></i></a>
+</div>
+
+</div>
+</section>
+
+<footer>
+© 2026 Asadullah | Portfolio
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
