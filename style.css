@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 :root{--bg:#0b1220;--ice:#5cc8ff;--gold:#e9c27a;--txt:#eef2f8;--mist:#9fb0c8;--card:rgba(17,27,48,.62);--line:rgba(255,255,255,.09)}
 @property --a{syntax:'<angle>';inherits:false;initial-value:0deg}
 *{margin:0;padding:0;box-sizing:border-box}
@@ -113,7 +113,7 @@ footer{text-align:center;padding:28px;color:var(--mist);border-top:1px solid var
 }
 @media(max-width:576px){section{padding:70px 6%}.btn{display:block;margin:10px 0;text-align:center}.c1{left:-4%}.c2{right:-4%}.c3{left:0}.contact-box{padding:28px}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.rv,.hero-text>*,.name span{opacity:1;transform:none}.photo-card{opacity:1;scale:1}.rv.in[data-tilt]{transform:none}}
-=======
+
 
 
 /* RESET */
@@ -310,4 +310,4 @@ text-align:center;
 grid-template-columns:1fr;
 }
 }
->>>>>>> f916752c5a30f45f101fd1d6015dd0e717cfd538
+
